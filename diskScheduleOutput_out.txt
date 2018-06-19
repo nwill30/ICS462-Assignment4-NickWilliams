@@ -1,0 +1,39 @@
+Nick Williams Assignment 4
+
+
+For FCFS, the total head movement was 640 cylinders.
+
+
+For SSTF, the total head movement was 180 cylinders.
+
+
+For SCAN, the total head movement was 334 cylinders.
+
+
+For CSCAN, the total head movement was 185 cylinders.
+
+
+For SSTF, the total head movement was 300 cylinders.
+
+
+For SSTF, the total head movement was 154 cylinders.
+
+
+For FCFS, the total head movement was 2716 cylinders.
+
+
+For SSTF, the total head movement was 1480 cylinders.
+
+
+For SCAN, the total head movement was 1651 cylinders.
+
+
+For CSCAN, the total head movement was 973 cylinders.
+
+
+For SSTF, the total head movement was 1351 cylinders.
+
+
+For SSTF, the total head movement was 723 cylinders.
+
+

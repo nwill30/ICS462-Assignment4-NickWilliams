@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Utilities {
 
@@ -26,5 +27,39 @@ public class Utilities {
             System.out.println("IOException: No data in selected file");
         }
         return fileList;
+    }
+
+    /**
+     * Creates a new text file in a specified accessible location
+     *
+     * @return newFile is the file object
+     * @parm fileName the name of the text file to be created (_out.txt will be appended to name)
+     * @parm the location the file is to be created in
+     */
+    public static File createFile(String fileName, String fileDirectory) throws IOException {
+        File newFile = new File(String.format("%s\\%s_out.txt", fileDirectory, fileName));
+        newFile.createNewFile();
+        return newFile;
+    }
+
+    /**
+     * Writes a Linked list to an existing file
+     *
+     * @param fileName the name of the existing file
+     *
+     */
+    public static void writeToFile(File fileName, LinkedList<String> outputList) {
+
+        try {
+            PrintStream writer = new PrintStream(new FileOutputStream(fileName));
+            writer.println("Nick Williams Assignment 4");
+            writer.println('\n');
+            for(int i =0;i<outputList.size();i++){
+                writer.println(outputList.get(i));
+            }
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
